@@ -1,0 +1,43 @@
+{
+    "name": "neverthrow-pattern",
+    "version": "0.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "scripts": {
+        "test": "vitest",
+        "build": "tsup"
+    },
+    "keywords": [
+        "neverthrow",
+        "pattern",
+        "match",
+        "ts-pattern",
+        "result",
+        "ok",
+        "err"
+    ],
+    "files": [
+        "dist/**/*",
+        "package.json"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/svemat01/neverthrow-pattern"
+    },
+    "author": "svemat01",
+    "license": "MIT",
+    "packageManager": "pnpm@10.4.1",
+    "devDependencies": {
+        "neverthrow": "^8.2.0",
+        "ts-pattern": "^5.6.2",
+        "tsup": "^8.4.0",
+        "typescript": "^5.8.2",
+        "vitest": "^3.0.7"
+    },
+    "peerDependencies": {
+        "neverthrow": "^8.2.0",
+        "ts-pattern": "^5.6.2"
+    }
+}
