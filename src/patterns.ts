@@ -1,21 +1,6 @@
 import { Ok, Err } from "neverthrow";
 import { isMatching, P } from "ts-pattern";
-
-export type UnwrapOk<T> = T extends Ok<infer U, any> ? U : never;
-export type UnwrapErr<T> = T extends Err<any, infer U> ? U : never;
-
-export type None = {
-    type: "none";
-};
-export type Some<key extends string> = {
-    type: "some";
-    key: key;
-};
-
-export const anonymousSelectKey = "@ts-pattern/anonymous-select-key";
-export type anonymousSelectKey = typeof anonymousSelectKey;
-
-type WithDefault<a, b> = [a] extends [never] ? b : a;
+import { WithDefault, UnwrapErr, UnwrapOk } from "./types";
 
 /**
  * `ok(pattern?)` is a pattern matching function for `Ok` values from neverthrow.
