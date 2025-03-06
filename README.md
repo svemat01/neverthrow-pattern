@@ -170,11 +170,15 @@ Contributions are welcome! Here's how you can help:
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+3. Make your changes
+4. Create a changeset to document your changes: `pnpm changeset`
+5. Commit your changes: `git commit -am 'Add some feature'`
+6. Push to the branch: `git push origin my-new-feature`
+7. Submit a pull request
 
 Please make sure your code follows the existing style and includes appropriate tests.
+
+For more detailed information, see the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
 
 ## License
 
